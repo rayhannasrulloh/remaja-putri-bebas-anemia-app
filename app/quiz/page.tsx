@@ -11,6 +11,22 @@ export default function QuizPage() {
 
   const questions = [
     {
+      questionText: "Anemia adalah kondisi kekurangan…?",
+      options: [
+        { answerText: "Gula", isCorrect: false },
+        { answerText: "Lemak", isCorrect: false },
+        { answerText: "Hemogoblin", isCorrect: true },
+      ],
+    },
+    {
+      questionText: "Tablet Tambah Darah diminum sebanyak …",
+      options: [
+        { answerText: "Setiap hari", isCorrect: false },
+        { answerText: "1 kali seminggu ", isCorrect: true },
+        { answerText: "1 kali sebulan ", isCorrect: false },
+      ],
+    },
+    {
       questionText: "Zat apa yang terkandung dalam TTD?",
       options: [
         { answerText: "Kalsium", isCorrect: false },
@@ -27,11 +43,11 @@ export default function QuizPage() {
       ],
     },
     {
-      questionText: "Minuman apa yang menghambat penyerapan?",
+      questionText: "TTD sebaiknya diminum bersama …",
       options: [
-        { answerText: "Jus Jeruk", isCorrect: false },
-        { answerText: "Air Putih", isCorrect: false },
-        { answerText: "Teh & Kopi", isCorrect: true },
+        { answerText: "Teh", isCorrect: false },
+        { answerText: "Kopi", isCorrect: false },
+        { answerText: "Air putih atau jus jeruk", isCorrect: true },
       ],
     },
   ];
