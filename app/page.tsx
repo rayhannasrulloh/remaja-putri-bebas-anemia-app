@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion"; // Animation library
 import { BookOpen, Pill, Clock, PlayCircle, BrainCircuit, Calendar } from "lucide-react";
@@ -28,6 +29,20 @@ export default function Home() {
           Jadilah remaja yang sehat, aktif, dan percaya diri dengan rutin mengonsumsi Tablet Tambah Darah.
         </p>
       </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-8 mb-12 flex justify-center"
+      >
+        <Link 
+          href="/about" 
+          className="flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-slate-800 hover:scale-105 transition-all"
+        >
+          Mulai Petualangan Sehat 🚀
+        </Link>
+      </motion.div> 
 
       {/* Bento Grid Menu */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

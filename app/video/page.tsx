@@ -1,4 +1,5 @@
 import { YouTubeEmbed } from '@next/third-parties/google';
+import NextButton from "../components/NextButton";
 
 export default function VideoPage() {
   return (
@@ -51,6 +52,8 @@ export default function VideoPage() {
           </p>
         </div>
       </div>
+
+        <NextButton href="/quiz" label="Lanjut: Kuis Singkat" />
     </div>
   );
 }

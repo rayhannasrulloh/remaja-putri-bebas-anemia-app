@@ -1,3 +1,6 @@
+import NextButton from "../components/NextButton";
+
+
 export default function ReminderPage() {
   return (
     <div className="container mx-auto p-6 max-w-2xl text-center">
@@ -19,6 +22,8 @@ export default function ReminderPage() {
           </button>
         </div>
       </div>
+
+      <NextButton href="/closing" label="Selesai: Penutup" />
     </div>
   );
 }

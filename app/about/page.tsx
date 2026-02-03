@@ -1,4 +1,5 @@
 import { BookOpen, Activity, AlertCircle } from "lucide-react";
+import NextButton from "../components/NextButton";
 
 export default function AboutPage() {
   return (
@@ -62,6 +63,8 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+
+      <NextButton href="/ttd" label="Lanjut: Apa itu TTD?" />
     </div>
   );
 }
