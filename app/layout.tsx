@@ -18,28 +18,44 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* Navigation Bar */}
-        <nav className="bg-purple-600 text-white p-4 shadow-md">
-          <div className="container mx-auto flex justify-between items-center">
-            <Link href="/" className="text-xl font-bold">
-              ✨ Bebas Anemia
+        
+        {/* --- UPDATED NAVBAR START --- */}
+        <nav className="bg-purple-700 text-white p-4 shadow-lg sticky top-0 z-50">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            
+            {/* Logo */}
+            <Link href="/" className="text-2xl font-bold flex items-center gap-2 mb-4 md:mb-0">
+              ✨ <span className="tracking-wide">Bebas Anemia</span>
             </Link>
-            <div className="space-x-4 hidden md:flex">
-              <Link href="/about" className="hover:text-purple-200">Tentang Anemia</Link>
-              <Link href="/ttd" className="hover:text-purple-200">Info TTD</Link>
-              <Link href="/quiz" className="hover:text-purple-200">Kuis</Link>
+
+            {/* Menu Links - Matching our Folder Structure */}
+            <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base font-medium">
+              <Link href="/about" className="hover:text-purple-200 transition">
+                Tentang
+              </Link>
+              <Link href="/ttd" className="hover:text-purple-200 transition">
+                Info TTD
+              </Link>
+              <Link href="/usage" className="hover:text-purple-200 transition">
+                Cara Minum
+              </Link>
+              <Link href="/video" className="hover:text-purple-200 transition">
+                Video
+              </Link>
+              <Link href="/quiz" className="bg-white text-purple-700 px-3 py-1 rounded-full hover:bg-purple-100 transition">
+                Kuis
+              </Link>
             </div>
           </div>
         </nav>
-        
-        {/* Main Content */}
+        {/* --- UPDATED NAVBAR END --- */}
+
         <main className="min-h-screen bg-purple-50">
           {children}
         </main>
 
-        {/* Footer */}
         <footer className="bg-purple-800 text-white p-6 text-center mt-10">
-          <p>💖 Ayo minum TTD secara rutin demi masa depan yang sehat!</p>
+          <p>© 2026 Remaja Putri Bebas Anemia</p>
         </footer>
       </body>
     </html>
