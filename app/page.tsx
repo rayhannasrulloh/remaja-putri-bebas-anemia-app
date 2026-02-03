@@ -19,9 +19,9 @@ export default function Home() {
         <span className="inline-block px-4 py-1.5 rounded-full bg-pink-100 text-pink-700 text-xs font-bold tracking-wider uppercase mb-2">
           Edukasi Kesehatan Remaja
         </span>
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-800">
           Remaja Putri <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-main to-brand-soft">
             Bebas Anemia
           </span>
         </h1>
@@ -38,7 +38,7 @@ export default function Home() {
       >
         <Link 
           href="/about" 
-          className="flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-slate-800 hover:scale-105 transition-all"
+          className="flex items-center gap-3 bg-brand-main text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-brand-main/30 hover:bg-brand-soft hover:scale-105 transition-all"
         >
           Mulai Petualangan Sehat 🚀
         </Link>
@@ -53,7 +53,8 @@ export default function Home() {
           title="Tentang Anemia" 
           desc="Kenali penyebab dan gejala 5L."
           icon={<BookOpen size={32} />}
-          color="bg-blue-50 text-blue-600 hover:border-blue-200"
+          // Warna Biru kita ganti jadi Brand-BG tapi text tetap gelap atau brand-main
+          color="bg-white text-brand-main border-brand-soft/30 hover:border-brand-main"
           className="md:col-span-2"
         />
 
@@ -63,7 +64,7 @@ export default function Home() {
           title="Info TTD" 
           desc="Apa itu Tablet Tambah Darah?"
           icon={<Pill size={32} />}
-          color="bg-purple-50 text-purple-600 hover:border-purple-200"
+          color="bg-brand-bg text-brand-main border-brand-soft/30 hover:border-brand-main"
         />
 
         {/* Standard Card: Usage */}
@@ -72,7 +73,7 @@ export default function Home() {
           title="Cara Minum" 
           desc="Do's & Don'ts minum obat."
           icon={<Clock size={32} />}
-          color="bg-green-50 text-green-600 hover:border-green-200"
+          color="bg-brand-bg text-brand-main border-brand-soft/30 hover:border-brand-main"
         />
 
         {/* Standard Card: Video */}
@@ -90,7 +91,7 @@ export default function Home() {
           title="Kuis Singkat" 
           desc="Uji pemahamanmu dan dapatkan skor!"
           icon={<BrainCircuit size={32} />}
-          color="bg-amber-50 text-amber-600 hover:border-amber-200"
+          color="bg-brand-bg text-brand-main border-brand-soft/30 hover:border-brand-main"
           className="md:row-span-2"
         />
 
